@@ -106,15 +106,14 @@ console.log(contactList(graduates));
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called unisWithUni that contains them all. This will be an array of objects. Log the result. */
 
 function wordUni(graduates){
-  let unisWithUni = [];
-  for (let i = 0; i < graduates.length; i++){
-    if (graduates[i].university == "Uni"){
-      unisWithUni.push(graduates[i])
+    let universities =[];
+    for (let i = 0; i < graduates.length; i++){
+     if (graduates[i].university.includes("Uni") == true){
+      universities.push(graduates[i]);
+     };
     }
+    return universities;
   }
-
-  return unisWithUni
-}
 
 
 
