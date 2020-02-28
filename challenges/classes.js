@@ -29,7 +29,7 @@ class Cubemaker extends CuboidMaker {
         super(att);
     }
     formulas(){
-        return `${volume} ${surfacearea}`;
+        return `${this.volume} ${this.surfacearea}`;
     }
 }
 

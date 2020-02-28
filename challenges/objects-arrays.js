@@ -159,9 +159,6 @@ The zoos need a list of all their animal's names (animal_name only) converted to
 
 */
 
-
-
-
   let lowCaseAnimalNames = zooAnimals.map((items)=>{
     return items.animal_name.toLowerCase();
   })
