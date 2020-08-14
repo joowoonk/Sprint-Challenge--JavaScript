@@ -108,7 +108,7 @@ console.log(contactList(graduates));
 function wordUni(graduates){
     let universities =[];
     for (let i = 0; i < graduates.length; i++){
-     if (graduates[i].university.includes("Uni") == true){
+     if (graduates[i].university.includes("Uni") === true){
       universities.push(graduates[i]);
      };
     }

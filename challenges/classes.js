@@ -27,11 +27,16 @@ console.log(cuboid.surfaceArea());
 class Cubemaker extends CuboidMaker {
     constructor(att){
         super(att);
+        console.log(att);
     }
-    formulas(){
+    banana(){
         return `${this.volume} ${this.surfacearea}`;
     }
+  
 }
 
+// console.log(banana());
+
 var cuboid2 = new CuboidMaker("10","40","30");
-console.log(cuboid2.formulas())
+
+console.log(cuboid2)
